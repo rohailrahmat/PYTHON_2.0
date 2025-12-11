@@ -165,3 +165,180 @@
 
 # third_row = nested_list[2][0]
 # print(third_row)
+
+
+
+# # 2️⃣ Tuples (Immutable Ordered Collection) - ⭐LESS USED
+
+
+# empty_tuple = () # or tuple()
+# my_tuple    = ('Wall', 'Floor', 'Roof', 'Ceiling', 'Door','window')
+# print("list_1:", my_tuple)
+
+# my_tuple2 = ("rohail","romail","raheel","wasim","hasnain")
+# print("list_2:", my_tuple2)
+# # 📥 Get Items by Index
+
+# first_item = my_tuple2[0]
+# print("First Item is:", first_item)
+# secound_item = my_tuple2[2]
+# print("Secound Item is:", secound_item)
+# # 📤 Change Item by Index - Not Possible in Tuple
+# # my_tuple2[3] = "rahmat" # This will raise an error
+# # print("After Changing Item:", my_tuple2)
+# # ➕ Add Item to Tuple - Not Possible in Tuple
+# # my_tuple2.append("sheryar") # This will raise an error
+# # print("After Appending Item:", my_tuple2)
+# new_tuple = ("a","b","c","d","e","f","g","h","i","j")
+# sliced_tuple_1 = new_tuple[2:]
+# # ya index 2 pa jo c hai waha se agay sab ko include karay ga INCLUDING c
+# sliced_tuple_2 = new_tuple[:7]
+# # ya index 0 se index 7 tak sab print karay ga lekin 7 ko include nahi karay ga
+# sliced_tuple_3 = new_tuple[2:5]
+# # ya index 2 se index 5 tak print karay ga lekin 5 ko include nahi karay ga
+# print("Sliced Tuple from C to J:",sliced_tuple_1)
+# print("Sliced Tuple from a to g:",sliced_tuple_2)
+# print("Sliced Tuple from C to e:",sliced_tuple_3)
+# # ya ak trick hai apnay tuple ko reverse karna hai to ap negative indexing use kar saktay hain
+# new_tuple_2 = (1,2,3,4,5,6,7,8,9,0)
+# reversed_tuple = new_tuple_2[::-1]  
+# print("Reversed Tuple is:",reversed_tuple)
+# # OUTPUT
+# # list_1: ('Wall', 'Floor', 'Roof', 'Ceiling', 'Door', 'window')
+# # list_2: ('rohail', 'romail', 'raheel', 'wasim', 'hasnain')
+# # First Item is: rohail
+# # Secound Item is: raheel
+# # Sliced Tuple from C to J: ('c', 'd', 'e', 'f', 'g', 'h', 'i', 'j')
+# # Sliced Tuple from a to g: ('a', 'b', 'c', 'd', 'e', 'f', 'g')
+# # Sliced Tuple from C to e: ('c', 'd', 'e')
+# # Reversed Tuple is: (0, 9, 8, 7,
+# #  6, 5, 4, 3, 2, 1)
+# # NESTED TUPLES
+# nested_tuple = (
+#     (1, 2, 3),
+#     (4, 5, 6),
+#     (7, 8, 9)
+#     )
+# print("Nested Tuple:", nested_tuple)
+# # Accessing items in nested tuple
+# first_row = nested_tuple[0][0]
+# print(first_row)
+# secound_row = nested_tuple[1][2]
+# print(secound_row)
+# third_row = nested_tuple[2][0]
+# print(third_row)
+# # OUTPUT
+# # Nested Tuple: ((1, 2, 3), (4, 5, 6), (7, 8, 9))
+# # 1
+# # 6
+# # 7
+
+# build in funtions for collections
+# data = (1, 2, 3, 4, 5)
+# print("Length of data:", len(data))          # Output: 5
+# print("Max value in data:", max(data))       # Output: 5 
+# print("Min value in data:", min(data))       # Output: 1
+# print("Sum of data:", sum(data))             # Output: 15
+# print("Sorted data:", sorted(data))         # Output: [1, 2, 3, 4, 5]
+# print("Type of data:", type(data))         # Output: <class 'tuple'>
+# print(data.count(3))               # Output: 1
+# print(data.index(4))               # Output: 3
+
+# # 3️⃣ Set (Mutable Unordered Collection of Unique Items) - ⭐LESS USED
+
+# empty_set = set() # Note: {} creates an empty dictionary, not a set
+# my_set    = {'Wall', 'Floor', 'Roof', 'Ceiling', 'Door','window'}
+# print("Set 1:", my_set)
+
+
+# # set ko hum hamisha {} ma use kartay hai 
+# # example  set_1 = {1,3,4,5,6,7,8,5,3,2}
+# # empty_set_2 = set()
+# #  ya ak empty_set_2 ko show karany ka tariqa hai 
+# # set hamisha chiz ko non repeated or Unorder form ma show karta hai
+# my_set_2 = {"rohail","romail","wasim","ashoo","raheeel","rehan","sheryar",}
+# print("this is my set:", my_set_2)
+# print("sorted Set", sorted(my_set_2))
+
+
+# # convert a list into a set
+# list_1 = [1,2,4,5,6,7,8,9,6,4,"rohail","raheel","romail","rehan"]
+
+# set_data = set(list_1)
+# unique_data = set_data
+# print(list_1)
+# print(set_data)
+# print(unique_data)
+
+
+# a = {1,2,3,4,5}
+# b = {4,5,6,7,8}
+# print("Union:", a | b)               # Output: {1, 2, 3, 4, 5, 6, 7, 8}
+# print("Intersection:", a & b)        # Output: {4, 5}
+# print("Difference:", a - b)          # Output: {1, 2, 3}
+# print("Symmetric Difference:", a ^ b)  # Output: {1, 2, 3, 6, 7, 8}
+# # OUTPUT
+# # Union: {1, 2, 3, 4, 5, 6, 7, 8}
+# # Intersection: {4, 5}
+# # Difference: {1, 2, 3}
+# # Symmetric Difference: {1, 2, 3, 6, 7, 8}
+
+
+
+
+# # 4️⃣ Dict (Mutable Unordered Collection of Key-Value Pairs) - ⭐MOST USED
+
+
+# empty_dict = {} # or dict()
+# my_dict = {
+#     'name': 'rohail',
+#     'age': 25,
+#     'city': 'Karachi',
+#     'profession': 'Developer',
+#     'skills': ['Python', 'JavaScript', 'SQL'],
+#     'is_employed': False,
+#     'address': '123 Main Danyore',
+# }
+
+# print("Original Dictionary:", my_dict)
+# print('Name:',my_dict['name'])
+# print('age:',my_dict['age'])
+# print('profession:',my_dict['profession'])
+# # 
+
+my_dict = {
+    "int" : "a whole number like 1,2 or 3",
+    "float" : "a decimal number like 1.5, 2.5 or 3.5",
+    "str" : "a sequence of characters like 'hello' or 'python'",
+    "bool" : "a data type that can be either True or False",
+    "list" : "a collection of items that can be changed, like [1, 2, 3]",
+    "tuple" : "a collection of items that cannot be changed, like (1, 2, 3)",
+    "set" : "a collection of unique items, like {1, 2, 3}",
+    "dict" : "a collection of key-value pairs, like {'name': 'Alice', 'age': 25}",
+
+
+}
+# # yaha pa hum nay aik dictionary banai hai jismei hum nay data types ke naam ko key banaya hai aur unki definition ko value banaya hai
+# # phir hum nay for loop use kar kay dictionary ke tamam items ko print karwaya hai
+# for key, value in my_dict.items():
+#     print(f"{key}: {value}")
+
+# # OUTPUT
+# # int: a whole number like 1,2 or 3
+# # float: a decimal number like 1.5, 2.5 or 3.5
+# # str: a sequence of characters like 'hello' or 'python'
+# # bool: a data type that can be either True or False
+# # list: a collection of items that can be changed, like [1, 2, 3]
+# # tuple: a collection of items that cannot be changed, like (1, 2, 3)
+# # set: a collection of unique items, like {1, 2, 3}
+# # dict: a collection of key-value pairs, like {'name': 'Alice', 'age': 25}
+# # # accessing items in dictionary
+# print("string:", my_dict['str'])
+
+# print(len(my_dict))  # Output: 8
+# print(list(my_dict.keys()))  # Output: ['int', 'float', 'str', 'bool', 'list', 'tuple', 'set', 'dict']
+# print(list(my_dict.values()))  # Output: ['a whole number like 1,2]
+# print(list(my_dict.items()))  # Output: a data type that can be either True or False
+
+
+
