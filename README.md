@@ -11,8 +11,7 @@ This repository contains a structured collection of Python programs, exercises, 
 ```
 PYTHON_2.0/
 │
-├── Python_Basics/
-│   ├── Variables and Data Types
+├───/Variables and Data Types
 │   ├── Control Flow (if/else, loops)
 │   ├── Functions
 │   ├── Data Structures (Lists, Tuples, Dictionaries, Sets)
